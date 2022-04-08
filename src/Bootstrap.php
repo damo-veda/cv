@@ -441,9 +441,9 @@ class Bootstrap {
           if (!empty($matches)) {
             return array($cmsType, $basePath);
           }
-          $matches = glob("$basePath/web/$relPath");
+          $matches = glob("$basePath/public_html/$relPath");
           if (!empty($matches)) {
-            return array($cmsType, "$basePath/web");
+            return array($cmsType, "$basePath/public_html");
           }
         }
       }
